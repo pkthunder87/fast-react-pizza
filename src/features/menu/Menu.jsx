@@ -4,12 +4,11 @@ import MenuItem from "./MenuItem.jsx";
 
 function Menu() {
   const menu = useLoaderData();
-  console.log(menu);
 
   return (
     <ul>
       {menu.map((pizza) => (
-        <MenuItem pizza={pizza} key={pizza} />
+        <MenuItem pizza={pizza} key={pizza.id} />
       ))}
     </ul>
   );
