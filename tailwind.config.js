@@ -5,12 +5,13 @@ export default {
     fontFamily: {
       sans: 'Roboto Mono, monospace',
     },
-    extend: {},
-    colors: {
-      pizza: '#123456',
-    },
-    height: {
-      screen: '100dvh',
+    extend: {
+      colors: {
+        pizza: '#123456',
+      },
+      height: {
+        screen: '100dvh',
+      },
     },
   },
   plugins: [],
