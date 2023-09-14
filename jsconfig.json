@@ -4,6 +4,6 @@
     "module": "NodeNext",
     "jsx": "react-jsx"
   },
-  "include": ["./src"],
+  "include": ["./src", "store.js"],
   "exclude": ["./node_modules", "./public"]
 }
