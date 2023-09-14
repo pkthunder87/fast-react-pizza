@@ -17,6 +17,7 @@ const initialState = {
 const cartSlice = createSlice({
   name: 'cart',
   initialState,
+
   reducers: {
     addItem(state, action) {
       // payload = newItem
@@ -37,6 +38,8 @@ const cartSlice = createSlice({
 
       item.quantity--;
       item.totalPrice = item.quantity * item.unitPrice;
+
+      if (item.quantity === 0) cartSlice.caseReducers.deleteItem(state, action);
     },
     clearCart(state) {
       state.cart = [];
